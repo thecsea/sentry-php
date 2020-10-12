@@ -711,7 +711,7 @@ final class Options
             'class_serializers' => [],
         ]);
 
-        $resolver->setAllowedTypes('send_attempts', 'int');
+        /*$resolver->setAllowedTypes('send_attempts', 'int');
         $resolver->setAllowedTypes('prefixes', 'string[]');
         $resolver->setAllowedTypes('sample_rate', ['int', 'float']);
         $resolver->setAllowedTypes('traces_sample_rate', ['int', 'float']);
@@ -738,7 +738,7 @@ final class Options
         $resolver->setAllowedTypes('http_proxy', ['null', 'string']);
         $resolver->setAllowedTypes('capture_silenced_errors', 'bool');
         $resolver->setAllowedTypes('max_request_body_size', 'string');
-        $resolver->setAllowedTypes('class_serializers', 'array');
+        $resolver->setAllowedTypes('class_serializers', 'array');*/
 
         $resolver->setAllowedValues('max_request_body_size', ['none', 'small', 'medium', 'always']);
         $resolver->setAllowedValues('dsn', \Closure::fromCallable([$this, 'validateDsnOption']));
