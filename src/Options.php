@@ -677,7 +677,7 @@ final class Options
     private function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'integrations' => [],
+            //'integrations' => [],
             'default_integrations' => true,
             'send_attempts' => 3,
             'prefixes' => explode(PATH_SEPARATOR, get_include_path()),
