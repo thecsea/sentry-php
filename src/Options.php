@@ -677,7 +677,7 @@ final class Options
     private function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            //'integrations' => [],
+            'integrations' => [],
             'default_integrations' => true,
             'send_attempts' => 3,
             'prefixes' => explode(PATH_SEPARATOR, get_include_path()),
@@ -731,7 +731,7 @@ final class Options
         $resolver->setAllowedTypes('error_types', ['int']);
         $resolver->setAllowedTypes('max_breadcrumbs', 'int');
         $resolver->setAllowedTypes('before_breadcrumb', ['callable']);
-        $resolver->setAllowedTypes('integrations', ['Sentry\\Integration\\IntegrationInterface[]', 'callable']);
+        //$resolver->setAllowedTypes('integrations', ['Sentry\\Integration\\IntegrationInterface[]', 'callable']);
         $resolver->setAllowedTypes('send_default_pii', 'bool');
         $resolver->setAllowedTypes('default_integrations', 'bool');
         $resolver->setAllowedTypes('max_value_length', 'int');
